@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pace Invaders Vex IQ Score Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<center>
+	<br>
+	<br>
+	<img src="Pace Invaders Logo Black.jpg" width="300" height="250" alt="">
+	<br>
+	<br>
+	<span style="color:#03C03C;"># Of Red Blocks Knocked Of: </span><input id="rBlocks" type="number" value="0">
+	<br>
+	<br>
+	<span style="color:#03C03C;"># Of Blocks Scored: </span><input id="bScored" type="number" value="0">
+	<br>
+	<br>
+	<span style="color:#03C03C;"># Of Uniform Goals: </span><input id="uGoals" type="number" value="0">
+	<br>
+	<br>
+	<span style="color:#03C03C;">Fill Level of Lowest Goal (None = 0, Low = 1, Medium = 2, & High = 3): </span><input id="fLevel" type="number" value="0">
+	<br>
+	<br>
+	<span style="color:#03C03C;">Supply Zone (Not Cleared = 0, Cleared = 1): </span><input id="sZone" type="number" value="0">
+	<br>
+	<br>
+	<span style="color:#03C03C;">Parking (Not Parked = 0, Partially Parked = 1, Fully Parked = 2): </span><input id="a1Parked" type="number" value="0">
+	<br>
+	<br>
+	<span style="color:#03C03C;">Parking (Not Parked = 0, Partially Parked = 1, Fully Parked = 2): </span><input id="a2Parked" type="number" value="0">
+	<br>
+	<h2 style="color:#03C03C;" id="score">Score: 0</h2>
+	<br>
+	<button class="btn btn-warning" id="cScore" onclick="cScore()">Calculate Score</button>
+	<br>
+	<br>
+	<button class="btn btn-primary" id="resetF" onclick="cFields()">Clear Fields</button>
+	<br>
+	<br>
+	<button class="btn btn-info" id="mTimer" onclick="mTimer()">Match Timer</button>
+</center>
+</body>
+<script src="script.js"></script>
+</html>
